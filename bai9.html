@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không.-->
+<!--Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1.-->
+<script>
+   /* */
+
+    function testCharacter(arrTest,character) {
+
+        for (let i = 0; i < arrTest.length; i++) {
+            arrTest[i].toString();
+            for (let j = 0; j < arrTest[i].length; j++) {
+                 document.write("\n"+ arrTest[i].length);
+                if (arrTest[i][j] === character) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+   let arrTest1 = ["sdad","23","[]zcz"];
+   let character1 = prompt("nhập kí tự");
+   let kt1 = testCharacter(arrTest1,character1);
+   if(kt1){
+       alert("kí tự có trong mảng");
+   }
+   else
+       alert("kí tự không có trong mảng");
+
+</script>
+</body>
+</html>

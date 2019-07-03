@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function testNumber(x) {
+        let numberArray = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+            let testString = x.toString();
+            if(testString[0]==="-"){
+                for (let i = 1; i < testString.length; i++) {
+                    for (let j = 0; j < numberArray.length; j++) {
+                        if (numberArray.indexOf(testString[i]) !== -1) {
+                            return true;
+                        } else {
+                            return false;
+                        }
+                    }
+                }
+            }
+            else {
+                for (let i = 0; i < testString.length; i++) {
+                    for (let j = 0; j < numberArray.length; j++) {
+                        if (numberArray.indexOf(testString[i]) !== -1) {
+                            return true;
+                        } else {
+                            return false;
+                        }
+                    }
+                }
+            }
+    }
+        let a = prompt("nhập số");
+        let kq = testNumber(a);
+        console.log(kq);
+        if (testNumber(a)) {
+            console.log(a + " là số");
+        } else
+            console.log(a + " không là số")
+</script>
+</body>
+</html>

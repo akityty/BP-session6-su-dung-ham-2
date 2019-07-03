@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--S=pi*r*r;-->
+<!--A=2*pi*r;-->
+<script>
+    function calculationPerimeter(x) {return 2*x*Math.PI;}
+    function calculationArea(x) {return Math.pow(x,2)*Math.PI;}
+    let a = parseInt(prompt("nhập bán kính hình Tròn: "));
+    let perimeter = calculationPerimeter(a); // let chu vi
+    console.log("A= "+perimeter)
+    let area = calculationArea(a);
+    console.log(("S= "+area));
+</script>
+</body>
+</html>
